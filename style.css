@@ -1,0 +1,90 @@
+body{
+    background-color: #15101C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    margin: auto;
+    font-family: Inter;
+}
+#container{
+    background-color: #1D1825;
+    padding: 20px 50px 2px 50px;
+    width: 400px;
+    height: 600px;
+    border-radius: 15px;
+    
+}
+#addbox{
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+#inputtask{
+    border: 1px solid #9E78CF;
+    fill: none;
+    border-radius: 8px;
+    background-color:#1D1825;
+    padding: 8px 10px;
+    width: 85%;
+    margin-right:8px ;
+    color: #FFFFFF;
+    outline: none;
+}
+#inputtask:focus{
+    border:  1px solid #9E78CF;
+}
+#addtask{
+    height: 34px;
+    width: 34px;
+    background-color: #9E78CF;
+    border-radius: 8px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+#addtask img{
+    height: 25px;
+    width: 25px;
+}
+.head{
+color: #FFFFFF;
+font-weight: 400;
+word-spacing: 2px;
+font-size: 16px;
+}
+.taskcontainer{
+    display: flex;
+    background-color: #15101C;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 20px 5px 20px;
+    height: 60px;
+}
+.buttons{
+    display: flex;
+}
+.buttons button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.buttons button img{
+    width: 18px;
+
+}
+.taskcontent{
+color: #9E78CF;
+font-size: 15px;
+}
+.donesection{
+    margin-top: 50px;
+}
+#donetask{
+    height: 60px;
+    color: #78CFB0;
+    font-size: 15px;
+}

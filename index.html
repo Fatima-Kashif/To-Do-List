@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do lIst</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form id="container">
+        <div id="addbox">
+        <input id="inputtask" type="text" placeholder="Add a new task" >
+        <button id="addtask" onclick="addtask()"><img src="assets/Plus.svg" alt="addicon"></button>
+    </div>
+        <p class="head" id="taskno">Tasks to do</p>
+        <div class="taskcontainer">
+            <div class="taskcontent">
+            <p id="task1" class="tasks">To study React Fundamentals</p>
+        </div>
+            <div class="buttons">
+            <button class="done" onclick="donetask()"><img src="assets/Check.svg" alt="done"></button>
+            <button class="edit" onclick="edittask()"><img src="assets/Icon.svg" alt="edit"></button>
+            <button class="delete" onclick="deletetask()"><img src="assets/Vector.svg" alt="delete"></button>
+            </div>
+        </div>
+        <div class="donesection">
+        <p class="head" id="doneno">Done</p>
+        <div>
+            <p id="donetask" class="markedtask taskcontainer">Task that are done</p>
+        </div>
+    </div>
+    </form>
+    <script src="script.js"> </script>
+</body>
+</html>
