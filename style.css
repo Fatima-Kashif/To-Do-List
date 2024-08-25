@@ -34,7 +34,19 @@ body{
 #inputtask:focus{
     border:  1px solid #9E78CF;
 }
-#addtask{
+#editinput{
+    fill: none;
+    outline: none;
+    background-color:#15101C;
+    color: #9E78CF;
+    border: none;
+    font-size: 15px;
+   
+    
+    
+}
+
+#addTask{
     height: 34px;
     width: 34px;
     background-color: #9E78CF;
@@ -44,8 +56,9 @@ body{
     justify-content: center;
     align-items: center;
     border: none;
+    cursor: pointer;
 }
-#addtask img{
+#addTask img{
     height: 25px;
     width: 25px;
 }
@@ -55,6 +68,36 @@ font-weight: 400;
 word-spacing: 2px;
 font-size: 16px;
 }
+#tasklist{
+    height: 170px;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    overflow-x: hidden;
+    scrollbar-color: #9E78CF;
+}
+#tasklist::-webkit-scrollbar-thumb {
+    background-color: #9E78CF;
+    border-radius: 10px;
+    border: 2px solid #f1f1f1; 
+}
+
+.taskListEmpty{
+background-color: #15101C;
+height: 170px;
+display: flex;
+flex-direction: column;
+border-radius: 15px;
+justify-content: center;
+align-items: center;
+}
+.taskListEmpty::before {
+    content: "No task added \A  \A Add a task to start your productive day!!";
+    white-space: pre-wrap; 
+    text-align: center;
+    color: #9E78CF;
+  }
+
+
 .taskcontainer{
     display: flex;
     background-color: #15101C;
@@ -63,6 +106,9 @@ font-size: 16px;
     justify-content: space-between;
     padding: 5px 20px 5px 20px;
     height: 60px;
+    margin-bottom: 5px;
+   
+   margin-right: 6px;
 }
 .buttons{
     display: flex;
@@ -76,15 +122,34 @@ font-size: 16px;
     width: 18px;
 
 }
+#done{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+   
+}
 .taskcontent{
 color: #9E78CF;
 font-size: 15px;
+width: 80%;
+
 }
 .donesection{
-    margin-top: 50px;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    overflow-x: hidden;
+    margin-top: 30px;
+    height: 200px;
+    scrollbar-color: #9E78CF;
 }
-#donetask{
+.markedtask{
     height: 60px;
     color: #78CFB0;
     font-size: 15px;
+    margin-bottom: 5px;
+    text-decoration: line-through;
 }
